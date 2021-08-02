@@ -10,6 +10,7 @@ connectDB()
 app.use(cors())
 
 const port  = process.env.PORT || 4000
+app.set("port",port)
 
 //Avalible express.json
 app.use(express.json({extended:true})) //write json from views

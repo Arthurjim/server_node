@@ -9,7 +9,7 @@ connectDB()
 //hablitar cors para que pueda comunicarse a otro servidor
 app.use(cors())
 
-const PORT  = process.env.PORT || 4000
+const port  = process.env.PORT || 4000
 
 //Avalible express.json
 app.use(express.json({extended:true})) //write json from views
@@ -24,6 +24,6 @@ app.use('/api/tasks',require('./routes/task-routes'))
 
 
 
-app.listen(PORT, ()=>{
+app.listen(port, '0.0.0.0', ()=>{
     console.log(`Server on port ${PORT}`)
 })

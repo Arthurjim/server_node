@@ -25,6 +25,6 @@ app.use('/api/tasks',require('./routes/task-routes'))
 
 
 
-app.listen(port, '0.0.0.0', ()=>{
+app.listen(port, ()=>{
     console.log(`Server on port ${port}`)
 })

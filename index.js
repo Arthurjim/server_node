@@ -8,7 +8,6 @@ connectDB()
 
 //hablitar cors para que pueda comunicarse a otro servidor
 app.use(cors({ credentials: true, origin: true }));
-app.options("*", cors());
 
 const port  = process.env.PORT || 4000
 
@@ -25,6 +24,6 @@ app.use('/api/tasks',require('./routes/task-routes'))
 
 
 
-app.listen(port, ()=>{
+app.listen(port, '0.0.0.0', () => {
     console.log(`Server on port ${port}`)
 })

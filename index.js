@@ -8,6 +8,7 @@ connectDB()
 
 //hablitar cors para que pueda comunicarse a otro servidor
 app.use(cors({ credentials: true, origin: true }));
+app.options("*", cors());
 
 const port  = process.env.PORT || 4000
 

@@ -1,7 +1,10 @@
 {
   "name": "servidor",
   "version": "1.0.0",
-  "description": "",
+  "description": "a really cool app",
+  "engines": {
+    "node": "14.17.0"
+ },
   "main": "index.js",
   "scripts": {
     "start": "node  index.js",
@@ -12,9 +15,7 @@
   "devDependencies": {
     "nodemon": "^2.0.7"
   },
-  "engines": {
-    "node": "14.17.0"
- },
+  
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "cors": "^2.8.5",
